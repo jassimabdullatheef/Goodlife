@@ -45,11 +45,11 @@ body,h1,h2,h3,h4,h5,h6,p,span,div{
     color: $black-lighter;
   }
   // Weights
-  &.strong, .strong{
+  &.strong, .strong, strong{
     font-weight: bold;
   }
   &.light, .light{
-    font-weight: light;
+    font-weight: 100;
   }
 }
 
@@ -58,33 +58,34 @@ h1,h2,h3{
   font-weight: bold;
 }
 h1{
-  font-size: 45px;
-  line-height: 40px;
-  margin: 25px auto;
+  font-size: 40px;
+  line-height: 45px;
+  margin: 30px auto;
 }
 h2{
   font-size: 35px;
   line-height: 40px;
-  margin: 20px auto;
+  margin: 25px auto;
 }
 h3{
   font-size: 30px;
   line-height: 35px;
-  margin: 15px auto;
+  margin: 20px auto;
 }
 h4{
   font-size: 25px;
   line-height: 20px;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 h5{
   font-size: 20px;
   line-height: 25px;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 h6{
   line-height: 24px;
   font-size: 18px;
+  margin: 5px auto;
 }
 // Content
 p{

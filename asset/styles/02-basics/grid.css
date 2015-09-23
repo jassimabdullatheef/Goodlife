@@ -21,9 +21,7 @@ body {
       display: inline-block;
       position: relative;
       letter-spacing: 0;
-      text-align: center;
       min-height: 50px;
-      background-color: #F2F2F2;
       width: 100%;
       margin: 5px 0px; }
       .row .container .col-2 .col-2, .row .container .col-2 .col-4, .row .container .col-2 .col-8, .row .container .col-2 .col-10, .row .container .col-4 .col-2, .row .container .col-4 .col-4, .row .container .col-4 .col-8, .row .container .col-4 .col-10, .row .container .col-8 .col-2, .row .container .col-8 .col-4, .row .container .col-8 .col-8, .row .container .col-8 .col-10, .row .container .col-10 .col-2, .row .container .col-10 .col-4, .row .container .col-10 .col-8, .row .container .col-10 .col-10 {
@@ -38,24 +36,23 @@ body {
         width: 64.036%; }
       .row .container .col-2 .col-10, .row .container .col-4 .col-10, .row .container .col-8 .col-10, .row .container .col-10 .col-10 {
         width: 80.710%; }
+  .row.bg-gray, .row .bg-gray {
+    background-color: #F2F2F2; }
+  .row.bg-gray-dark, .row .bg-gray-dark {
+    background-color: #212120; }
 
 @media (max-width: 320px) {
   .row .container {
     width: 90%;
-    padding: 0 5%; }
-    .row .container .col-2, .row .container .col-4, .row .container .col-8, .row .container .col-10 {
-      background-color: #ccc; } }
+    padding: 0 5%; } }
 
 @media (min-width: 768px) {
   .row .container {
     width: 96%;
-    padding: 0 2%; }
-    .row .container .col-2, .row .container .col-4, .row .container .col-8, .row .container .col-10 {
-      background-color: #bbb; } }
+    padding: 0 2%; } }
 
 @media (min-width: 992px) {
   .row .container .col-2, .row .container .col-4, .row .container .col-8, .row .container .col-10 {
-    background-color: #aaa;
     margin: 0 1.351%; }
   .row .container .col-2 {
     width: 14.035%; }
@@ -72,7 +69,6 @@ body {
     width: 1110px;
     padding: 0 30px; }
     .row .container .col-2, .row .container .col-4, .row .container .col-8, .row .container .col-10 {
-      background-color: #999;
       margin: 0 1.351%; }
     .row .container .col-2 {
       width: 14.414%; }

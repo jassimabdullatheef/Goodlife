@@ -27,42 +27,43 @@ body, h1, h2, h3, h4, h5, h6, p, span, div {
     color: #171818; }
   body.color-blackLighter, body .color-blackLighter, h1.color-blackLighter, h1 .color-blackLighter, h2.color-blackLighter, h2 .color-blackLighter, h3.color-blackLighter, h3 .color-blackLighter, h4.color-blackLighter, h4 .color-blackLighter, h5.color-blackLighter, h5 .color-blackLighter, h6.color-blackLighter, h6 .color-blackLighter, p.color-blackLighter, p .color-blackLighter, span.color-blackLighter, span .color-blackLighter, div.color-blackLighter, div .color-blackLighter {
     color: #333333; }
-  body.strong, body .strong, h1.strong, h1 .strong, h2.strong, h2 .strong, h3.strong, h3 .strong, h4.strong, h4 .strong, h5.strong, h5 .strong, h6.strong, h6 .strong, p.strong, p .strong, span.strong, span .strong, div.strong, div .strong {
+  body.strong, body .strong, body strong, h1.strong, h1 .strong, h1 strong, h2.strong, h2 .strong, h2 strong, h3.strong, h3 .strong, h3 strong, h4.strong, h4 .strong, h4 strong, h5.strong, h5 .strong, h5 strong, h6.strong, h6 .strong, h6 strong, p.strong, p .strong, p strong, span.strong, span .strong, span strong, div.strong, div .strong, div strong {
     font-weight: bold; }
   body.light, body .light, h1.light, h1 .light, h2.light, h2 .light, h3.light, h3 .light, h4.light, h4 .light, h5.light, h5 .light, h6.light, h6 .light, p.light, p .light, span.light, span .light, div.light, div .light {
-    font-weight: light; }
+    font-weight: 100; }
 
 h1, h2, h3 {
   font-weight: bold; }
 
 h1 {
-  font-size: 45px;
-  line-height: 40px;
-  margin: 25px auto; }
+  font-size: 40px;
+  line-height: 45px;
+  margin: 30px auto; }
 
 h2 {
   font-size: 35px;
   line-height: 40px;
-  margin: 20px auto; }
+  margin: 25px auto; }
 
 h3 {
   font-size: 30px;
   line-height: 35px;
-  margin: 15px auto; }
+  margin: 20px auto; }
 
 h4 {
   font-size: 25px;
   line-height: 20px;
-  margin: 10px auto; }
+  margin: 15px auto; }
 
 h5 {
   font-size: 20px;
   line-height: 25px;
-  margin: 5px auto; }
+  margin: 10px auto; }
 
 h6 {
   line-height: 24px;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 5px auto; }
 
 p {
   font-size: 18px;

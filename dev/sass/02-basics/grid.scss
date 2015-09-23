@@ -28,9 +28,7 @@ body{
       display: inline-block;
       position: relative;
       letter-spacing: 0;
-      text-align: center;
       min-height: 50px;
-      background-color: $gray;
       width:100%;
       margin:5px 0px;
       // Nested grids
@@ -53,6 +51,13 @@ body{
       }
     }
   }
+  // Background Colors
+  &.bg-gray, .bg-gray{
+    background-color: $gray;
+  }
+  &.bg-gray-dark, .bg-gray-dark{
+    background-color: $gray-dark;
+  }
 }
 
 // Mobile only styles
@@ -63,7 +68,6 @@ body{
       width: 90%;
       padding: 0 5%;
       .col-2,.col-4,.col-8,.col-10{
-        background-color: #ccc;
       }
     }
   }
@@ -78,7 +82,6 @@ body{
       width: 96%;
       padding: 0 2%;
       .col-2,.col-4,.col-8,.col-10{
-        background-color: #bbb;
       }
     }
   }
@@ -89,7 +92,6 @@ body{
   .row{
     .container{
       .col-2,.col-4,.col-8,.col-10{
-        background-color: #aaa;
         margin: 0 1.351%;
       }
       .col-2{
@@ -116,7 +118,6 @@ body{
       width: 1110px;
       padding: 0 30px;
       .col-2,.col-4,.col-8,.col-10{
-        background-color: #999;
         margin: 0 1.351%;
       }
       .col-2{

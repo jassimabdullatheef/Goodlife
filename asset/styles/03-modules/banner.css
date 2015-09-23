@@ -1,0 +1,30 @@
+.banner {
+  background-color: #1C9ED7; }
+  .banner img.down-arrow {
+    position: relative;
+    margin-top: -80px;
+    margin-right: -300px; }
+  .banner .video-embed {
+    width: 100%;
+    margin-top: 10px; }
+    .banner .video-embed .video-background {
+      width: 100%; }
+      .banner .video-embed .video-background img {
+        width: 100%; }
+      .banner .video-embed .video-background a.video-play-button {
+        text-decoration: none;
+        position: absolute;
+        z-index: 100;
+        bottom: 25%;
+        left: calc(50% - 50px);
+        display: block;
+        margin: 0 auto;
+        opacity: 0;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        .banner .video-embed .video-background a.video-play-button img {
+          width: 100px; }
+      .banner .video-embed .video-background:hover a.video-play-button {
+        opacity: 1; }
