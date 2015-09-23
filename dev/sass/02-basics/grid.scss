@@ -1,0 +1,171 @@
+@-ms-viewport{
+  width: device-width;
+}
+@import "colors";
+$screen-xs : 320px;
+$screen-sm : 768px;
+$screen-md : 992px;
+$screen-lg : 1200px;
+body{
+  max-width: 100%;
+}
+// General Styles and mobile styles
+.row{
+  width: 100%;
+  float: left;
+  display: block;
+  .container{
+    display: block;
+    float: none;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 92%;
+    padding: 0 4%;
+    letter-spacing: -5px;
+    // Grid Columns
+    .col-2,.col-4,.col-8,.col-10{
+      display: inline-block;
+      position: relative;
+      letter-spacing: 0;
+      text-align: center;
+      min-height: 50px;
+      background-color: $gray;
+      width:100%;
+      margin:5px 0px;
+      // Nested grids
+      .col-2,.col-4,.col-8,.col-10{
+        float: left;
+        display: block;
+        margin: 0 1.351%;
+      }
+      .col-2{
+        width: 14.035%;
+      }
+      .col-4{
+        width: 30.703%;
+      }
+      .col-8{
+        width: 64.036%;
+      }
+      .col-10{
+        width: 80.710%;
+      }
+    }
+  }
+}
+
+// Mobile only styles
+@media (max-width: $screen-xs) {
+  .row{
+
+    .container{
+      width: 90%;
+      padding: 0 5%;
+      .col-2,.col-4,.col-8,.col-10{
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+
+// Small Devices
+@media (min-width: $screen-sm) {
+  .row{
+
+    .container{
+      width: 96%;
+      padding: 0 2%;
+      .col-2,.col-4,.col-8,.col-10{
+        background-color: #bbb;
+      }
+    }
+  }
+}
+
+// Medium Devices
+@media (min-width: $screen-md) {
+  .row{
+    .container{
+      .col-2,.col-4,.col-8,.col-10{
+        background-color: #aaa;
+        margin: 0 1.351%;
+      }
+      .col-2{
+        width: 14.035%;
+      }
+      .col-4{
+        width: 30.703%;
+      }
+      .col-8{
+        width: 64.036%;
+      }
+      .col-10{
+        width: 80.710%;
+      }
+    }
+  }
+}
+
+// Large Devices
+@media (min-width: $screen-lg) {
+  .row{
+    .container{
+      max-width: 1170px;
+      width: 1110px;
+      padding: 0 30px;
+      .col-2,.col-4,.col-8,.col-10{
+        background-color: #999;
+        margin: 0 1.351%;
+      }
+      .col-2{
+        width: 14.414%;
+      }
+      .col-4{
+        width: 31.531%;
+      }
+      .col-8{
+        width: 65.766%;
+      }
+      .col-10{
+        width: 82.883%;
+      }
+      [class|="col"]:first-child{
+        margin-left: 0px;
+      }
+      [class|="col"]:last-child{
+        margin-right: 0px;
+      }
+    }
+  }
+
+}
+
+
+// Div Alignment
+.row{
+  .container{
+    .col-2,.col-4,.col-8,.col-10{
+      &.pull-left{
+        float: left;
+        display: block;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+      &.pull-right{
+        float: right;
+        display: block;
+        &:first-child{
+          margin-right: 0;
+        }
+      }
+      &.center{
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

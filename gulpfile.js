@@ -16,7 +16,7 @@ gulp.task('webserver', function() {
 // Sass
 gulp.task('sass', function () {
   gulp.src('dev/sass/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('asset/styles'));
   gulp.src(['asset/styles/01-tools/*.css','asset/styles/02-basics/*.css','asset/styles/03-modules/*.css','asset/styles/04-pages/*.css'])
     .pipe(concat('style.min.css'))
@@ -25,7 +25,7 @@ gulp.task('sass', function () {
 
 // Watch
 gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['scss']);
+  gulp.watch('dev/sass/**/*.scss', ['sass']);
 });
 
 // Default

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: openSans;
+  src:url('./asset/fonts/antonio/Antonio-Regular.ttf');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+@import  "colors";
+
+// Styles and alignments
+body,h1,h2,h3,h4,h5,h6,p,span,div{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 100%;
+  letter-spacing: normal;
+  // Alignments
+  &.text-center, .text-center{
+    text-align: center;
+  }
+  &.text-left, .text-left{
+    text-align: left;
+  }
+  &.text-right, .text-right{
+    text-align: right;
+  }
+  // Colors
+  &.color-white, .color-white{
+    color: $white;
+  }
+  &.color-blue, .color-blue{
+    color: $blue;
+  }
+  &.color-blueDark, .color-blueDark{
+    color: $blue-dark;
+  }
+  &.color-orange, .color-orange{
+    color: $orange;
+  }
+  &.color-black, .color-black{
+    color: $black;
+  }
+  &.color-blackLight, .color-blackLight{
+    color: $black-light;
+  }
+  &.color-blackLighter, .color-blackLighter{
+    color: $black-lighter;
+  }
+  // Weights
+  &.strong, .strong{
+    font-weight: bold;
+  }
+  &.light, .light{
+    font-weight: light;
+  }
+}
+
+// Header
+h1,h2,h3{
+  font-weight: bold;
+}
+h1{
+  font-size: 45px;
+  line-height: 40px;
+  margin: 25px auto;
+}
+h2{
+  font-size: 35px;
+  line-height: 40px;
+  margin: 20px auto;
+}
+h3{
+  font-size: 30px;
+  line-height: 35px;
+  margin: 15px auto;
+}
+h4{
+  font-size: 25px;
+  line-height: 20px;
+  margin: 10px auto;
+}
+h5{
+  font-size: 20px;
+  line-height: 25px;
+  margin: 5px auto;
+}
+h6{
+  line-height: 24px;
+  font-size: 18px;
+}
+// Content
+p{
+  font-size: 18px;
+  color: #171818;
+  line-height: 24px;
+  .intro{
+    font-size: 22px;
+    color: #1C9ED7;
+  }
+}
+
+
+// Button
+.btn.cta{
+  font-size: 35px;
+}
