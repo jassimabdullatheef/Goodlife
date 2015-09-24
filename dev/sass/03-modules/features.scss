@@ -1,0 +1,25 @@
+@import  "../02-basics/config";
+.features{
+  .check-list{
+    tr{
+      vertical-align: middle !important;
+      display: inline-block;
+      width: 100%;
+      margin: 15px 0;
+      font-size: 16px;
+      td{
+        vertical-align: middle;
+        &:first-child{
+          width: 40px;
+          height: 40px;
+          background-image: url("/asset/images/check-mark.png");
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        &:nth-child(2){
+          width: 25px;
+        }
+      }
+    }
+  }
+}

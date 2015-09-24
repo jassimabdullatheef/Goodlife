@@ -59,9 +59,9 @@ body{
   &.bg-gray-dark, .bg-gray-dark{
     background-color: $gray-dark;
   }
-  &.space-top{ padding-top: 30px; }
-  &.space-bottom{ padding-bottom: 30px;}
-  &.space-both{ padding: 30px 0;}
+  &.space-top, .space-top{ padding-top: 30px; }
+  &.space-bottom, .space-bottom{ padding-bottom: 30px;}
+  &.space-both, .space-both{ padding: 30px 0;}
 }
 
 // Mobile only styles
