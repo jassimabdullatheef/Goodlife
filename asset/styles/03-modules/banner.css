@@ -6,11 +6,35 @@
     margin-right: -300px; }
   .banner .video-embed {
     width: 100%;
-    margin-top: 10px; }
+    margin-top: 10px;
+    overflow: hidden; }
     .banner .video-embed .video-background {
-      width: 100%; }
+      width: 100%;
+      position: relative; }
       .banner .video-embed .video-background img {
         width: 100%; }
+      .banner .video-embed .video-background .overlay-black {
+        position: absolute;
+        display: block;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -moz-transition: opacity 0.5s ease;
+        -o-transition: opacity 0.5s ease;
+        -webkit-transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease; }
+      .banner .video-embed .video-background:hover .overlay-black {
+        opacity: 1; }
+      .banner .video-embed .video-background:hover a.video-play-button {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
       .banner .video-embed .video-background a.video-play-button {
         text-decoration: none;
         position: absolute;
@@ -20,11 +44,29 @@
         display: block;
         margin: 0 auto;
         opacity: 0;
-        -moz-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease; }
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -moz-transition-delay: 0.1s;
+        -o-transition-delay: 0.1s;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s; }
         .banner .video-embed .video-background a.video-play-button img {
           width: 100px; }
-      .banner .video-embed .video-background:hover a.video-play-button {
-        opacity: 1; }
+        .banner .video-embed .video-background a.video-play-button:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+      @media (max-width: 992px) {
+        .banner .video-embed .video-background .overlay-black {
+          opacity: 1; }
+        .banner .video-embed .video-background a.video-play-button {
+          opacity: 1; } }

@@ -10,10 +10,32 @@
   .video-embed{
     width: 100%;
     margin-top: 10px;
+    overflow: hidden;
     .video-background{
       width: 100%;
+      position: relative;
       img{
         width: 100%;
+      }
+      .overlay-black{
+        position: absolute;
+        display: block;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(0,0,0,0.3);
+        opacity: 0;
+        @include transition(opacity 0.5s ease);
+      }
+      &:hover{
+        .overlay-black{
+          opacity: 1;
+        }
+        a.video-play-button{
+          opacity: 1;
+          @include transform(scale(1));
+        }
       }
       a.video-play-button{
         text-decoration: none;
@@ -24,13 +46,24 @@
         display: block;
         margin: 0 auto;
         opacity: 0;
-        @include transition(all 0.2s ease);
+        @include transform(scale(0.9));
+        @include transition(all 0.5s ease);
+        @include transition-delay(0.1s);
         img{
           width: 100px;
         }
+        &:hover{
+          @include transform(scale(1.1));
+        }
       }
-      &:hover a.video-play-button{
-        opacity: 1;
+      // Mobile and Tabler
+      @media (max-width : $screen-md) {
+        .overlay-black{
+          opacity: 1;
+        }
+        a.video-play-button{
+          opacity: 1;
+        }
       }
     }
 
