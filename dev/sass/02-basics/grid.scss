@@ -1,11 +1,8 @@
 @-ms-viewport{
   width: device-width;
 }
-@import "colors";
-$screen-xs : 320px;
-$screen-sm : 768px;
-$screen-md : 992px;
-$screen-lg : 1200px;
+@import "config";
+
 body{
   max-width: 100%;
 }
