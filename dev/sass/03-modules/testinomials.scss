@@ -1,0 +1,21 @@
+@import "../02-basics/config";
+@import "../01-tools/mixins";
+.testinomials{
+  .review {
+    vertical-align: middle !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    h6{
+      margin-top:0;
+    }
+    h5{
+      margin-bottom: 0;
+    }
+    h5,h6{
+      font-weight: bold;
+    }
+    p{
+      margin-top: 0;
+    }
+  }
+}

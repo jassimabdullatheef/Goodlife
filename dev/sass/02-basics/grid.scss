@@ -26,12 +26,14 @@ body{
       position: relative;
       letter-spacing: 0;
       width:100%;
-      margin:5px 0px;
+      vertical-align: top;
+      overflow: auto;
       // Nested grids
       .col-2,.col-4,.col-8,.col-10{
-        float: left;
-        display: block;
+        display: inline-block;
         margin: 0 1.351%;
+        float: left;
+
       }
       .col-2{
         width: 14.035%;
@@ -48,9 +50,6 @@ body{
       .col-12{
         width: 100%;
       }
-      img{
-        max-width: 100%;
-      }
     }
   }
   // Background Colors
@@ -60,6 +59,9 @@ body{
   &.bg-gray-dark, .bg-gray-dark{
     background-color: $gray-dark;
   }
+  &.space-top{ padding-top: 30px; }
+  &.space-bottom{ padding-bottom: 30px;}
+  &.space-both{ padding: 30px 0;}
 }
 
 // Mobile only styles

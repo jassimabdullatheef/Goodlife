@@ -22,11 +22,12 @@ body {
       position: relative;
       letter-spacing: 0;
       width: 100%;
-      margin: 5px 0px; }
+      vertical-align: top;
+      overflow: auto; }
       .row .container .col-2 .col-2, .row .container .col-2 .col-4, .row .container .col-2 .col-8, .row .container .col-2 .col-10, .row .container .col-4 .col-2, .row .container .col-4 .col-4, .row .container .col-4 .col-8, .row .container .col-4 .col-10, .row .container .col-8 .col-2, .row .container .col-8 .col-4, .row .container .col-8 .col-8, .row .container .col-8 .col-10, .row .container .col-10 .col-2, .row .container .col-10 .col-4, .row .container .col-10 .col-8, .row .container .col-10 .col-10, .row .container .col-12 .col-2, .row .container .col-12 .col-4, .row .container .col-12 .col-8, .row .container .col-12 .col-10 {
-        float: left;
-        display: block;
-        margin: 0 1.351%; }
+        display: inline-block;
+        margin: 0 1.351%;
+        float: left; }
       .row .container .col-2 .col-2, .row .container .col-4 .col-2, .row .container .col-8 .col-2, .row .container .col-10 .col-2, .row .container .col-12 .col-2 {
         width: 14.035%; }
       .row .container .col-2 .col-4, .row .container .col-4 .col-4, .row .container .col-8 .col-4, .row .container .col-10 .col-4, .row .container .col-12 .col-4 {
@@ -37,12 +38,16 @@ body {
         width: 80.560%; }
       .row .container .col-2 .col-12, .row .container .col-4 .col-12, .row .container .col-8 .col-12, .row .container .col-10 .col-12, .row .container .col-12 .col-12 {
         width: 100%; }
-      .row .container .col-2 img, .row .container .col-4 img, .row .container .col-8 img, .row .container .col-10 img, .row .container .col-12 img {
-        max-width: 100%; }
   .row.bg-gray, .row .bg-gray {
     background-color: #F2F2F2; }
   .row.bg-gray-dark, .row .bg-gray-dark {
     background-color: #212120; }
+  .row.space-top {
+    padding-top: 30px; }
+  .row.space-bottom {
+    padding-bottom: 30px; }
+  .row.space-both {
+    padding: 30px 0; }
 
 @media (max-width: 320px) {
   .row .container {

@@ -1,0 +1,12 @@
+.testinomials .review {
+  vertical-align: middle !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important; }
+  .testinomials .review h6 {
+    margin-top: 0; }
+  .testinomials .review h5 {
+    margin-bottom: 0; }
+  .testinomials .review h5, .testinomials .review h6 {
+    font-weight: bold; }
+  .testinomials .review p {
+    margin-top: 0; }

@@ -1,0 +1,9 @@
+@import "config";
+@import "../01-tools/mixins";
+img{
+  max-width: 100%;
+  &.rounded{
+    @include border-radius(50%);
+    overflow: hidden;
+  }
+}
