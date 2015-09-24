@@ -36,3 +36,8 @@
     -ms-transform: $property;
     transform: $property;
 }
+@mixin border-radius($property...) {
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    border-radius: $property;
+}

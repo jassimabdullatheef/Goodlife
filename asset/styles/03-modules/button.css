@@ -1,0 +1,23 @@
+.btn {
+  display: block;
+  max-width: 670px;
+  text-decoration: none;
+  padding: 20px 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  cursor: pointer; }
+  .btn.cta {
+    background-color: #F96B22; }
+    .btn.cta h2 {
+      margin: 0; }
+    .btn.cta:hover {
+      background-color: #ed6402; }
+  .btn.notClickable {
+    display: block !important;
+    appearance: window !important;
+    -moz-appearance: window !important;
+    /* Firefox */
+    -webkit-appearance: window !important;
+    /* Safari and Chrome */
+    cursor: default !important; }

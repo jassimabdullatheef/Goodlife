@@ -1,0 +1,26 @@
+@import "../02-basics/config";
+@import "../01-tools/mixins";
+.btn{
+  display: block;
+  max-width: 670px;
+  text-decoration: none;
+  padding: 20px 10px;
+  @include border-radius(7px);
+  cursor: pointer;
+  &.cta{
+    background-color: $orange;
+    h2{
+      margin: 0;
+    }
+    &:hover{
+      background-color: $orange-dark;
+    }
+  }
+  &.notClickable{
+    display: block !important;
+    appearance: window !important;
+    -moz-appearance: window !important; /* Firefox */
+    -webkit-appearance: window !important; /* Safari and Chrome */
+    cursor: default !important;
+  }
+}
