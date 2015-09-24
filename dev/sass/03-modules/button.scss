@@ -4,6 +4,7 @@
   display: block;
   max-width: 670px;
   text-decoration: none;
+  text-align: center !important;
   padding: 20px 10px;
   @include border-radius(7px);
   cursor: pointer;

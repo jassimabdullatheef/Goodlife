@@ -810,6 +810,12 @@ p, ul, ol {
     font-size: 16px;
     line-height: 20px; } }
 
+.name h4 {
+  margin-bottom: 0; }
+
+.name h5 {
+  margin-top: 0; }
+
 .banner {
   background-color: #1C9ED7;
   overflow: hidden; }
@@ -888,6 +894,7 @@ p, ul, ol {
   display: block;
   max-width: 670px;
   text-decoration: none;
+  text-align: center !important;
   padding: 20px 10px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -907,6 +914,12 @@ p, ul, ol {
     -webkit-appearance: window !important;
     /* Safari and Chrome */
     cursor: default !important; }
+
+.cta .panel {
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 3px dashed #959595;
+  padding: 50px; }
 
 .features .check-list tr {
   vertical-align: middle !important;
