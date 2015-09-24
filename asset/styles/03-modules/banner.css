@@ -1,5 +1,6 @@
 .banner {
-  background-color: #1C9ED7; }
+  background-color: #1C9ED7;
+  overflow: hidden; }
   .banner img.down-arrow {
     position: relative;
     margin-top: -80px;

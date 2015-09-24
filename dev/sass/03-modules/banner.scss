@@ -2,6 +2,7 @@
 @import "../01-tools/mixins";
 .banner{
   background-color: $blue;
+  overflow: hidden;
   img.down-arrow{
     position: relative;
     margin-top: -80px;
