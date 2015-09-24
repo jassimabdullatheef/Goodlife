@@ -1,2 +1,5 @@
 .letter {
   margin-top: 40px; }
+  @media (max-width: 768px) {
+    .letter h3 {
+      margin-top: 0; } }

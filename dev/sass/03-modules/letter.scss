@@ -1,3 +1,9 @@
+@import  "../02-basics/config";
 .letter{
   margin-top: 40px;
+  @media (max-width : $screen-sm) {
+    h3{
+      margin-top: 0;
+    }
+  }
 }
