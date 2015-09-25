@@ -1,7 +1,8 @@
 @import "../02-basics/config";
 @import "../01-tools/mixins";
 .btn{
-  display: block;
+  display: inline-block;
+  position: relative;
   max-width: 670px;
   text-decoration: none;
   text-align: center !important;
@@ -16,6 +17,57 @@
     &:hover{
       background-color: $orange-dark;
     }
+  }
+  &.btn-tw,&.btn-fb,&.btn-gp{
+    color: $white;
+    padding: 0px 0px;
+    margin: 0 7px;
+    height: 52px;
+    width: auto;
+    vertical-align: middle !important;
+    display: inline-block;
+    span.caption{
+      padding:17px;
+      display: inline;
+      vertical-align: middle !important;
+      overflow: auto;
+      float: left;
+    }
+    &::before{
+      content: '';
+      display: inline-block;
+      background-image: url("/asset/images/social-button-logos.png");
+      background-repeat: no-repeat;
+      height: 52px;
+      width: 52px;
+      overflow: hidden;
+      float: left;
+    }
+    &::after{
+      content: '';
+      display: block;
+      top:0px;
+      left: 52px;
+      position: absolute;
+      height: 52px;
+      width: 1px;
+      background-color: rgba(0,0,0,0.3);
+    }
+  }
+  &.btn-tw{
+    background-color: #51d6f8;
+    &::before{ background-position: 0px 0px;}
+    &:hover{ background-color: #4fd0f0; }
+  }
+  &.btn-fb{
+    background-color: #355091;
+    &::before{ background-position: -52px 0px;}
+    &:hover{ background-color: #2a4073; }
+  }
+  &.btn-gp{
+    background-color: #2a2a2a;
+    &::before{ background-position: -104px 0px;}
+    &:hover{ background-color: #121212; }
   }
   &.notClickable{
     display: block !important;
