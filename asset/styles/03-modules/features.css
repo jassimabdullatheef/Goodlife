@@ -9,7 +9,7 @@
     .features .check-list tr td:first-child {
       width: 40px;
       height: 40px;
-      background-image: url("/asset/images/check-mark.png");
+      background-image: url("../images/check-mark.png");
       background-repeat: no-repeat;
       background-size: 100%; }
     .features .check-list tr td:nth-child(2) {
