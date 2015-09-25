@@ -41,7 +41,8 @@ body {
   .row.bg-gray, .row .bg-gray {
     background-color: #F2F2F2; }
   .row.bg-gray-dark, .row .bg-gray-dark {
-    background-color: #212120; }
+    background-color: #212120;
+    color: white; }
   .row.space-top, .row .space-top {
     padding-top: 30px; }
   .row.space-bottom, .row .space-bottom {

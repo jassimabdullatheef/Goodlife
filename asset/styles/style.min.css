@@ -629,7 +629,8 @@ body {
   .row.bg-gray, .row .bg-gray {
     background-color: #F2F2F2; }
   .row.bg-gray-dark, .row .bg-gray-dark {
-    background-color: #212120; }
+    background-color: #212120;
+    color: white; }
   .row.space-top, .row .space-top {
     padding-top: 30px; }
   .row.space-bottom, .row .space-bottom {
@@ -995,6 +996,19 @@ p, ul, ol {
       background-size: 100%; }
     .features .check-list tr td:nth-child(2) {
       width: 25px; }
+
+.footer p, .footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px; }
+
+.footer p {
+  margin: 0px;
+  line-height: 14px; }
+
+.footer ul li {
+  display: inline;
+  margin: 0px 20px; }
 
 @media (max-width: 768px) {
   .letter h3 {

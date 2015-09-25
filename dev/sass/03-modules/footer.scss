@@ -1,0 +1,16 @@
+@import  "../02-basics/config";
+.footer{
+  p,a{
+    color: $white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  p{
+    margin: 0px;
+    line-height: 14px;
+  }
+  ul li{
+    display: inline;
+    margin: 0px 20px;
+  }
+}
