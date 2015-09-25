@@ -966,6 +966,13 @@ p, ul, ol {
     /* Safari and Chrome */
     cursor: default !important; }
 
+@media (max-width: 768px) {
+  .btn-tw, .btn-fb, .btn-gp {
+    clear: both;
+    display: block !important;
+    margin: 15px auto !important;
+    max-width: 300px !important; } }
+
 .cta .panel {
   margin: 20px auto;
   background-color: #ffffff;

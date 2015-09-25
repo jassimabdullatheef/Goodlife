@@ -73,3 +73,10 @@
     -webkit-appearance: window !important;
     /* Safari and Chrome */
     cursor: default !important; }
+
+@media (max-width: 768px) {
+  .btn-tw, .btn-fb, .btn-gp {
+    clear: both;
+    display: block !important;
+    margin: 15px auto !important;
+    max-width: 300px !important; } }

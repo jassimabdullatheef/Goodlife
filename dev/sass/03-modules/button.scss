@@ -77,3 +77,11 @@
     cursor: default !important;
   }
 }
+@media (max-width : $screen-sm) {
+    &.btn-tw,&.btn-fb,&.btn-gp{
+      clear: both;
+      display: block !important;
+      margin: 15px auto !important;
+      max-width: 300px !important;
+    }
+}
