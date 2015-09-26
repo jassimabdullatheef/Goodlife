@@ -1,0 +1,29 @@
+{
+  "name": "goodlife",
+  "version": "1.0.0",
+  "description": "A test website for Doyen Digital",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-webserver": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jassimabdullatheef/Goodlife.git"
+  },
+  "keywords": [
+    "Goodlife"
+  ],
+  "author": "Jassim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jassimabdullatheef/Goodlife/issues"
+  },
+  "homepage": "https://github.com/jassimabdullatheef/Goodlife#readme"
+}
