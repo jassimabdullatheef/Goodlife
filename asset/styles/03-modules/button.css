@@ -11,6 +11,8 @@
   cursor: pointer; }
   .btn.cta {
     background-color: #F96B22;
+    max-width: 690px;
+    width: 100%;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -85,7 +87,9 @@
       background-color: #F96B22 !important; }
 
 @media (max-width: 768px) {
-  .btn-tw, .btn-fb, .btn-gp {
+  .btn.cta {
+    width: 90%; }
+  .btn.btn-tw, .btn.btn-fb, .btn.btn-gp {
     clear: both;
     display: block !important;
     margin: 15px auto !important;

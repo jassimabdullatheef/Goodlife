@@ -96,3 +96,16 @@
   background-color: rgba(0,0,0,0.6);
   z-index: 50;
 }
+@media (max-width : $screen-md) {
+  .modal-form{
+    width: 90% !important;
+    top: 15%  !important;
+    left: 2%  !important;
+    right: 2%  !important;
+  }
+}
+@media (max-width : $screen-sm) {
+  .modal-form{
+    top: 5%  !important;
+  }
+}

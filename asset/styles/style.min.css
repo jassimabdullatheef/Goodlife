@@ -924,6 +924,8 @@ p, ul, ol {
   cursor: pointer; }
   .btn.cta {
     background-color: #F96B22;
+    max-width: 690px;
+    width: 100%;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -998,7 +1000,9 @@ p, ul, ol {
       background-color: #F96B22 !important; }
 
 @media (max-width: 768px) {
-  .btn-tw, .btn-fb, .btn-gp {
+  .btn.cta {
+    width: 90%; }
+  .btn.btn-tw, .btn.btn-fb, .btn.btn-gp {
     clear: both;
     display: block !important;
     margin: 15px auto !important;
@@ -1013,6 +1017,10 @@ p, ul, ol {
   background-color: #ffffff;
   border: 3px dashed #959595;
   padding: 50px; }
+
+@media (max-width: 768px) {
+  .cta-section .panel {
+    padding: 50px 10px; } }
 
 .features .check-list tr {
   vertical-align: middle !important;
@@ -1121,7 +1129,7 @@ p, ul, ol {
         .modal-form form fieldset button:focus {
           outline: none; }
         .modal-form form fieldset button:active {
-          background-color: rgba(255, 255, 255, 0.7); }
+          background-color: rgba(255, 255, 255, 0.8); }
 
 .overlay {
   display: none;
@@ -1132,6 +1140,17 @@ p, ul, ol {
   right: 0px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 50; }
+
+@media (max-width: 992px) {
+  .modal-form {
+    width: 90% !important;
+    top: 15%  !important;
+    left: 2%  !important;
+    right: 2%  !important; } }
+
+@media (max-width: 768px) {
+  .modal-form {
+    top: 5%  !important; } }
 
 .testinomials .review {
   vertical-align: middle !important;

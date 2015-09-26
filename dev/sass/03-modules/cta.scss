@@ -7,3 +7,11 @@
     padding: 50px;
   }
 }
+
+@media (max-width : $screen-sm) {
+  .cta-section{
+    .panel{
+      padding: 50px 10px;
+    }
+  }
+}

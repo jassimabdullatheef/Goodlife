@@ -3,3 +3,7 @@
   background-color: #ffffff;
   border: 3px dashed #959595;
   padding: 50px; }
+
+@media (max-width: 768px) {
+  .cta-section .panel {
+    padding: 50px 10px; } }

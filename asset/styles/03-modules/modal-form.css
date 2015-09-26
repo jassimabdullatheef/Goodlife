@@ -82,3 +82,14 @@
   right: 0px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 50; }
+
+@media (max-width: 992px) {
+  .modal-form {
+    width: 90% !important;
+    top: 15%  !important;
+    left: 2%  !important;
+    right: 2%  !important; } }
+
+@media (max-width: 768px) {
+  .modal-form {
+    top: 5%  !important; } }

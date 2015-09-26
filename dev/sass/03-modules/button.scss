@@ -11,7 +11,8 @@
   cursor: pointer;
   &.cta{
     background-color: $orange;
-
+    max-width: 690px;
+    width: 100%;
     @include transition(all 0.5s ease);
     h2{
       margin: 0;
@@ -89,12 +90,17 @@
   }
 }
 @media (max-width : $screen-sm) {
+  .btn{
+    &.cta{
+      width: 90%;
+    }
     &.btn-tw,&.btn-fb,&.btn-gp{
       clear: both;
       display: block !important;
       margin: 15px auto !important;
       max-width: 300px !important;
     }
+  }
 }
 .dummy{
   width: 100%;
