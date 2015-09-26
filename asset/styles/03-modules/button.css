@@ -10,11 +10,17 @@
   border-radius: 7px;
   cursor: pointer; }
   .btn.cta {
-    background-color: #F96B22; }
+    background-color: #F96B22;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     .btn.cta h2 {
       margin: 0; }
     .btn.cta:hover {
       background-color: #ed6402; }
+    .btn.cta form {
+      display: none; }
   .btn.btn-tw, .btn.btn-fb, .btn.btn-gp {
     color: #ffffff;
     padding: 0px 0px;
@@ -65,6 +71,8 @@
       background-position: -104px 0px; }
     .btn.btn-gp:hover {
       background-color: #121212; }
+  .btn.btn-white {
+    background-color: #ffffff; }
   .btn.notClickable {
     display: block !important;
     appearance: window !important;
@@ -73,6 +81,8 @@
     -webkit-appearance: window !important;
     /* Safari and Chrome */
     cursor: default !important; }
+    .btn.notClickable.cta:hover {
+      background-color: #F96B22 !important; }
 
 @media (max-width: 768px) {
   .btn-tw, .btn-fb, .btn-gp {
@@ -80,3 +90,7 @@
     display: block !important;
     margin: 15px auto !important;
     max-width: 300px !important; } }
+
+.dummy {
+  width: 100%;
+  display: inline-block; }

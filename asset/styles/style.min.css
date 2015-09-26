@@ -422,6 +422,15 @@
   100% {
     opacity: 0; } }
 
+@media (max-width: 768px) {
+  .flip-clock-wrapper {
+    width: 270px; }
+    .flip-clock-wrapper ul {
+      margin: 5px 1px;
+      width: 40px; }
+    .flip-clock-wrapper .flip-clock-divider {
+      width: 5px; } }
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -595,7 +604,11 @@ body {
 .row {
   width: 100%;
   float: left;
-  display: block; }
+  display: block;
+  -moz-transition: all 0.2 ease;
+  -o-transition: all 0.2 ease;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease; }
   .row .container {
     display: block;
     float: none;
@@ -790,20 +803,20 @@ p, ul, ol {
 
 @media (max-width: 992px) {
   h1 {
-    font-size: 32px;
-    line-height: 40px; }
-  h2 {
     font-size: 28px;
-    line-height: 34px; }
-  h3 {
+    line-height: 32px; }
+  h2 {
     font-size: 24px;
-    line-height: 30px; }
-  h4 {
+    line-height: 28px; }
+  h3 {
     font-size: 20px;
     line-height: 26px; }
+  h4 {
+    font-size: 18px;
+    line-height: 22px; }
   h5 {
     font-size: 16px;
-    line-height: 22px; }
+    line-height: 20px; }
   h6 {
     font-size: 14px;
     line-height: 20px; }
@@ -885,11 +898,18 @@ p, ul, ol {
           -o-transform: scale(1.1);
           -ms-transform: scale(1.1);
           transform: scale(1.1); }
-      @media (max-width: 992px) {
-        .banner .video-embed .video-background .overlay-black {
-          opacity: 1; }
-        .banner .video-embed .video-background a.video-play-button {
-          opacity: 1; } }
+
+@media (max-width: 992px) {
+  .banner img.down-arrow {
+    margin-top: -100px;
+    margin-right: -200px;
+    width: 25px; }
+  .banner .video-embed .video-background .overlay-black {
+    opacity: 1; }
+  .banner .video-embed .video-background a.video-play-button {
+    opacity: 1;
+    width: 50px;
+    left: calc(50% - 25px); } }
 
 .btn {
   display: inline-block;
@@ -903,11 +923,17 @@ p, ul, ol {
   border-radius: 7px;
   cursor: pointer; }
   .btn.cta {
-    background-color: #F96B22; }
+    background-color: #F96B22;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     .btn.cta h2 {
       margin: 0; }
     .btn.cta:hover {
       background-color: #ed6402; }
+    .btn.cta form {
+      display: none; }
   .btn.btn-tw, .btn.btn-fb, .btn.btn-gp {
     color: #ffffff;
     padding: 0px 0px;
@@ -958,6 +984,8 @@ p, ul, ol {
       background-position: -104px 0px; }
     .btn.btn-gp:hover {
       background-color: #121212; }
+  .btn.btn-white {
+    background-color: #ffffff; }
   .btn.notClickable {
     display: block !important;
     appearance: window !important;
@@ -966,6 +994,8 @@ p, ul, ol {
     -webkit-appearance: window !important;
     /* Safari and Chrome */
     cursor: default !important; }
+    .btn.notClickable.cta:hover {
+      background-color: #F96B22 !important; }
 
 @media (max-width: 768px) {
   .btn-tw, .btn-fb, .btn-gp {
@@ -974,7 +1004,11 @@ p, ul, ol {
     margin: 15px auto !important;
     max-width: 300px !important; } }
 
-.cta .panel {
+.dummy {
+  width: 100%;
+  display: inline-block; }
+
+.cta-section .panel {
   margin: 20px auto;
   background-color: #ffffff;
   border: 3px dashed #959595;
@@ -1013,6 +1047,91 @@ p, ul, ol {
 @media (max-width: 768px) {
   .letter h3 {
     margin-top: 0; } }
+
+.modal-form {
+  position: fixed;
+  width: 100%;
+  max-width: 690px;
+  height: auto;
+  left: 10%;
+  right: 10%;
+  z-index: 100;
+  display: block !important;
+  appearance: window !important;
+  -moz-appearance: window !important;
+  /* Firefox */
+  -webkit-appearance: window !important;
+  /* Safari and Chrome */
+  cursor: default !important; }
+  .modal-form h2 {
+    margin-top: 20px !important; }
+  .modal-form.cta:hover {
+    background-color: #F96B22 !important; }
+  .modal-form form {
+    display: none;
+    width: 90%;
+    padding: 20px 5%;
+    text-align: left; }
+    .modal-form form fieldset {
+      width: 100%; }
+      .modal-form form fieldset label {
+        color: #ffffff;
+        font-size: 14px;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        margin-top: -45px;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        z-index: -1;
+        opacity: 0; }
+      .modal-form form fieldset input.text-box {
+        border: none;
+        background-color: transparent;
+        width: 0%;
+        margin: 20px 0px;
+        color: #ffffff;
+        font-size: 22px;
+        border-bottom: 1px solid white;
+        margin-bottom: 20px;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .modal-form form fieldset input.text-box:focus, .modal-form form fieldset input.text-box:active {
+          outline: none; }
+        .modal-form form fieldset input.text-box:valid {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+        .modal-form form fieldset input.text-box:focus:invalid {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        .modal-form form fieldset input.text-box:focus + label, .modal-form form fieldset input.text-box:valid + label {
+          margin-top: -70px;
+          color: rgba(255, 255, 255, 0.5); }
+      .modal-form form fieldset button {
+        border: none;
+        font-size: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0px auto;
+        margin-top: 20px; }
+        .modal-form form fieldset button:hover {
+          background-color: rgba(255, 255, 255, 0.9); }
+        .modal-form form fieldset button:focus {
+          outline: none; }
+        .modal-form form fieldset button:active {
+          background-color: rgba(255, 255, 255, 0.7); }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 50; }
 
 .testinomials .review {
   vertical-align: middle !important;

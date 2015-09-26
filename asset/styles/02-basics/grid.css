@@ -7,7 +7,11 @@ body {
 .row {
   width: 100%;
   float: left;
-  display: block; }
+  display: block;
+  -moz-transition: all 0.2 ease;
+  -o-transition: all 0.2 ease;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease; }
   .row .container {
     display: block;
     float: none;

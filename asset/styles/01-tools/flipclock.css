@@ -421,3 +421,12 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+@media (max-width: 768px) {
+  .flip-clock-wrapper {
+    width: 270px; }
+    .flip-clock-wrapper ul {
+      margin: 5px 1px;
+      width: 40px; }
+    .flip-clock-wrapper .flip-clock-divider {
+      width: 5px; } }

@@ -2,6 +2,7 @@
   width: device-width;
 }
 @import "config";
+@import "../01-tools/mixins";
 
 body{
   max-width: 100%;
@@ -11,6 +12,7 @@ body{
   width: 100%;
   float: left;
   display: block;
+  @include transition(all 0.2 ease);
   .container{
     display: block;
     float: none;

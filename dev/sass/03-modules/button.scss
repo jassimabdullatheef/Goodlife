@@ -11,11 +11,16 @@
   cursor: pointer;
   &.cta{
     background-color: $orange;
+
+    @include transition(all 0.5s ease);
     h2{
       margin: 0;
     }
     &:hover{
       background-color: $orange-dark;
+    }
+    form{
+      display: none;
     }
   }
   &.btn-tw,&.btn-fb,&.btn-gp{
@@ -69,12 +74,18 @@
     &::before{ background-position: -104px 0px;}
     &:hover{ background-color: #121212; }
   }
+  &.btn-white{
+    background-color: $white;
+  }
   &.notClickable{
     display: block !important;
     appearance: window !important;
     -moz-appearance: window !important; /* Firefox */
     -webkit-appearance: window !important; /* Safari and Chrome */
     cursor: default !important;
+    &.cta:hover{
+      background-color: $orange !important;
+    }
   }
 }
 @media (max-width : $screen-sm) {
@@ -84,4 +95,8 @@
       margin: 15px auto !important;
       max-width: 300px !important;
     }
+}
+.dummy{
+  width: 100%;
+  display: inline-block;
 }

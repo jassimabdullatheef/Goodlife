@@ -1,0 +1,84 @@
+.modal-form {
+  position: fixed;
+  width: 100%;
+  max-width: 690px;
+  height: auto;
+  left: 10%;
+  right: 10%;
+  z-index: 100;
+  display: block !important;
+  appearance: window !important;
+  -moz-appearance: window !important;
+  /* Firefox */
+  -webkit-appearance: window !important;
+  /* Safari and Chrome */
+  cursor: default !important; }
+  .modal-form h2 {
+    margin-top: 20px !important; }
+  .modal-form.cta:hover {
+    background-color: #F96B22 !important; }
+  .modal-form form {
+    display: none;
+    width: 90%;
+    padding: 20px 5%;
+    text-align: left; }
+    .modal-form form fieldset {
+      width: 100%; }
+      .modal-form form fieldset label {
+        color: #ffffff;
+        font-size: 14px;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        margin-top: -45px;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        z-index: -1;
+        opacity: 0; }
+      .modal-form form fieldset input.text-box {
+        border: none;
+        background-color: transparent;
+        width: 0%;
+        margin: 20px 0px;
+        color: #ffffff;
+        font-size: 22px;
+        border-bottom: 1px solid white;
+        margin-bottom: 20px;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .modal-form form fieldset input.text-box:focus, .modal-form form fieldset input.text-box:active {
+          outline: none; }
+        .modal-form form fieldset input.text-box:valid {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+        .modal-form form fieldset input.text-box:focus:invalid {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        .modal-form form fieldset input.text-box:focus + label, .modal-form form fieldset input.text-box:valid + label {
+          margin-top: -70px;
+          color: rgba(255, 255, 255, 0.5); }
+      .modal-form form fieldset button {
+        border: none;
+        font-size: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0px auto;
+        margin-top: 20px; }
+        .modal-form form fieldset button:hover {
+          background-color: rgba(255, 255, 255, 0.9); }
+        .modal-form form fieldset button:focus {
+          outline: none; }
+        .modal-form form fieldset button:active {
+          background-color: rgba(255, 255, 255, 0.8); }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 50; }

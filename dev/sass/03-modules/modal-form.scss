@@ -1,0 +1,98 @@
+@import "../02-basics/config";
+@import "../01-tools/mixins";
+
+.modal-form{
+  position: fixed;
+  width: 100%;
+  max-width: 690px;
+  height: auto;
+  //top: 25% !important;
+  left: 10%;
+  right: 10%;
+  z-index: 100;
+  display: block !important;
+  appearance: window !important;
+  -moz-appearance: window !important; /* Firefox */
+  -webkit-appearance: window !important; /* Safari and Chrome */
+  cursor: default !important;
+  h2{
+    margin-top: 20px !important;
+  }
+  &.cta:hover{
+    background-color: $orange !important;
+  }
+  form{
+    display: none;
+    width: 90%;
+    padding: 20px 5%;
+    text-align: left;
+
+    fieldset{
+      width: 100%;
+      label{
+         color: $white;
+         font-size: 14px;
+         @include transition(all 0.2s ease);
+
+         margin-top: -45px;
+         position: absolute;
+         display: inline-block;
+         overflow: hidden;
+         z-index: -1;
+         opacity: 0;
+      }
+      input.text-box{
+        border:none;
+        background-color: transparent;
+        width: 0%;
+        margin: 20px 0px;
+        color: $white;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(255,255,255,1);
+        margin-bottom: 20px;
+        @include transition(all 0.5s ease);
+        &:focus,&:active{
+          outline:none;
+        }
+        &:valid{
+          border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        &:focus:invalid{
+          border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+        &:focus + label,&:valid + label{
+
+          margin-top: -70px;
+          color: rgba(255,255,255,0.5);
+        }
+      }
+      button{
+        border: none;
+        font-size: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0px auto;
+        margin-top: 20px;
+        &:hover{
+          background-color: rgba(255,255,255,0.9);
+        }
+        &:focus{
+          outline: none;
+        }
+        &:active{
+          background-color: rgba(255,255,255,0.8);
+        }
+      }
+    }
+  }
+}
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 50;
+}

@@ -1,3 +1,4 @@
+@import "../02-basics/config";
 /* Get the bourbon mixin from http://bourbon.io */
 /* Reset */
 .flip-clock-wrapper * {
@@ -446,3 +447,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 
   100% {
     opacity: 0; } }
+
+@media (max-width: $screen-sm) {
+  .flip-clock-wrapper {
+    width: 270px;
+    ul{
+      margin: 5px 1px;
+      width:40px;
+    }
+    .flip-clock-divider{
+      width: 5px;
+    }
+  }
+
+}
