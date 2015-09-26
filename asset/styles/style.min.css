@@ -932,6 +932,8 @@ p, ul, ol {
     transition: all 0.5s ease; }
     .btn.cta h2 {
       margin: 0; }
+    .btn.cta .btn-close {
+      display: none; }
     .btn.cta:hover {
       background-color: #ed6402; }
     .btn.cta form {
@@ -1071,6 +1073,23 @@ p, ul, ol {
   -webkit-appearance: window !important;
   /* Safari and Chrome */
   cursor: default !important; }
+  .modal-form .btn-close {
+    display: block !important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #212120;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    font-weight: bold; }
   .modal-form h2 {
     margin-top: 20px !important; }
   .modal-form.cta:hover {
@@ -1107,7 +1126,10 @@ p, ul, ol {
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px; }
         .modal-form form fieldset input.text-box:focus, .modal-form form fieldset input.text-box:active {
           outline: none; }
         .modal-form form fieldset input.text-box:valid {

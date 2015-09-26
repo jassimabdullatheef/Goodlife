@@ -19,6 +19,8 @@
     transition: all 0.5s ease; }
     .btn.cta h2 {
       margin: 0; }
+    .btn.cta .btn-close {
+      display: none; }
     .btn.cta:hover {
       background-color: #ed6402; }
     .btn.cta form {

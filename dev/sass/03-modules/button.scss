@@ -17,6 +17,9 @@
     h2{
       margin: 0;
     }
+    .btn-close{
+      display: none;
+    }
     &:hover{
       background-color: $orange-dark;
     }

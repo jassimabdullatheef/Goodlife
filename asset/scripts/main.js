@@ -16,7 +16,6 @@ var btnTop = 0;
 $(".btn.cta").click(function(e){
   e.preventDefault();
   var btn = $(this);
-  console.log(btn.hasClass('modal-form'));
   if(!btn.hasClass('modal-form')){
     btnTop = $(this).offset().top-$(window).scrollTop();
     $(this).siblings('.dummy').css({
@@ -75,3 +74,6 @@ $('.overlay').click(function(){
     $('.overlay').fadeOut();
   },500);
 })
+$('.btn-close').click(function(){
+  $('.overlay').click();
+});
